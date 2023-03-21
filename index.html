@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <marquee behavior="scroll" direction="left">Welcome to the official grading page</marquee>
+    <h1 id="mydiv">
+        JAMB
+    </h1>
+    <input type="number" name="" placeholder="Enter Your Greade" id="inp">
+
+    <!-- <input type="text" placeholder="Enter your grade " id="inp"> -->
+    <button onclick="grade()">Grade</button>
+    <div id="mydiv2" align="center">RESULT</div>
+
+    <script>
+        function grade() {
+            var score = inp.value;
+            var mySong = new Audio("./Ayele.mp3")
+            if (score <= 39) {
+                mydiv2.innerText = "F"
+                alert("omo ale")
+                mySong.play()
+
+
+            }
+            else if (score <= 40) {
+                mydiv2.innerText = "E"
+                // var mySong2 = new Audio("look-at-you.mp3")
+                alert("oriyomi oooo")
+                // mySong2.play()
+
+            }
+            else if (score >= 70) {
+                mydiv2.innerText = "A"
+                alert("congratulation !!!")
+
+            }
+            else if (score >= 60) {
+                mydiv2.innerText = "B"
+                alert("weldone")
+
+            }
+            else if (score >= 50) {
+                mydiv2.innerText = "C"
+                alert("you try")
+            }
+            else if (score >= 45) {
+                mydiv2.innerText = "D"
+                alert("must you go to school nii?")
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
